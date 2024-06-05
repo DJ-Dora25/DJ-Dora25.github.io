@@ -127,6 +127,34 @@
 		border-color: #004d00;     /* Matching border color on hover */
 		color: #000000;            /* Ensure text stays bold black on hover */
 		}
+		.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px; /* Adjust margin as needed */
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Removes the bottom space in some cases */
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
+.portfolio-item .portfolio-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+    color: #fff;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-details {
+    opacity: 1;
+}
 
     </style>
 
@@ -557,6 +585,13 @@
 		</div>
 	</div>
 
+		<div class="portfolio-item">
+		<img src="images/banking.png" alt="Portfolio Item">
+		<div class="portfolio-details">
+			<h3>Project Title</h3>
+			<p>Project Description</p>
+		</div>
+	</div>
 	<div id="fh5co-work" class="fh5co-bg-dark">
 		<div class="container">
 			<div class="row animate-box">
