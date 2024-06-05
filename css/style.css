@@ -158,7 +158,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 30px;
   height: 4px;
   content: '';
-  background: #fff;
+  background: #d85858;
   margin-right: -30px;
 }
 @media screen and (max-width: 768px) {
